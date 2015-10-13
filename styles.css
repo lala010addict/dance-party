@@ -21,7 +21,10 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /*border:10px solid red;
+  border-radius:10px;*/
+  background-image: url("http://gifdanceparty.giphy.com/dancers/bones.gif") no-repeat;
   position:absolute;
+  width: 250px;
+  height: 340px;
 }
