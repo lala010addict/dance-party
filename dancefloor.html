@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui.css" />
     <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
-  </head>
-  <body>
+    <script src="src/turtleDancer.js"></script>
+    <script src="src/squidDancer.js"></script>
+</head>
+
+<body>
+    <embed src="sync.mp3" autostart="true" loop="true" width="2" height="0">
+    </embed>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>    </div>
+        <span class="title">object dance party</span>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeTurtleDancer">add a turtle dancer</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeSquidDancer">add a squid dancer</a>
+        <a href="#" class="lineUpButton">line up the dancers</a>
+    </div>
     <script src="src/init.js"></script>
-  </body>
+</body>
+
 </html>
