@@ -1,7 +1,7 @@
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps){
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('blinkyDancer');
-  this.$node.css("background-image", "url(http://gifdanceparty.giphy.com/dancers/bones.gif)");  
+  this.$node.css("background-image", "url(http://gifdanceparty.giphy.com/assets/dancers/bones.gif)");  
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 };
