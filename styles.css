@@ -63,3 +63,10 @@ a:active {
     width: 200px;
     height: 200px;
 }
+
+.ghostDancer {
+    background-image: no-repeat;
+    position: absolute;
+    width: 248px;
+    height: 166px;
+}
