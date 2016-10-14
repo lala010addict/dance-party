@@ -56,3 +56,10 @@ a:active {
     width: 250px;
     height: 190px;
 }
+
+.parrotDancer {
+    background-image: no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
