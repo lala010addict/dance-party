@@ -95,3 +95,10 @@ a:active {
     width: 100px;
     height: 100px;
 }
+
+.christmasDancer {
+    background-image: no-repeat;
+    position: absolute;
+    width: 146px;
+    height: 102px;
+}

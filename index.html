@@ -14,6 +14,21 @@
     <script src="src/parrotDancer.js"></script>
     <script src="src/ghostDancer.js"></script>
     <script src="src/halloweenDancer.js"></script>
+    <script src="src/christmasDancer.js"></script>
+    <script>
+        $(document).ready(function(){
+            var curDate = new Date();
+            var curMonth = curDate.getMonth();
+            if (curMonth != 11){
+                
+                $("#halloweenbtn").hide();
+            }
+            if (curMonth != 9){
+                $("#christmasbtn").hide();
+            }
+
+        }); 
+    </script>
 </head>
 
 <body>
@@ -22,7 +37,9 @@
     </embed>
     <div class="topbar">
         <span class="title">object dance party</span>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeHalloweenDancer">add a halloween dancer</a>
+        
+        <a href="#" id="halloweenbtn" class="addDancerButton btn" data-dancer-maker-function-name="MakeHalloweenDancer">add a halloween dancer</a>
+        <a href="#" id="christmasbtn" class="addDancerButton btn" data-dancer-maker-function-name="MakeChristmasDancer">add christmas dancers</a>
         <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeGhostDancer">add a ghost dancer</a>
         <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeParrotDancer">add a parrot dancer</a>
         <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>
