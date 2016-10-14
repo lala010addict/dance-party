@@ -2,57 +2,69 @@
 <html>
 
 <head>
-    <title>Object Dance Party</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="lib/jquery-ui.css" />
-    <script src="lib/jquery.js"></script>
-    <script src="lib/jquery-ui.js"></script>
-    <script src="src/dancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
-    <script src="src/turtleDancer.js"></script>
-    <script src="src/squidDancer.js"></script>
-    <script src="src/parrotDancer.js"></script>
-    <script src="src/ghostDancer.js"></script>
-    <script src="src/halloweenDancer.js"></script>
+  <title>Object Dance Party</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="lib/jquery-ui.css" />
+  <script src="lib/jquery.js"></script>
+  <script src="lib/jquery-ui.js"></script>
+  <script src="src/dancer.js"></script>
+  <script src="src/blinkyDancer.js"></script>
+  <script src="src/turtleDancer.js"></script>
+  <script src="src/squidDancer.js"></script>
+  <script src="src/parrotDancer.js"></script>
+  <script src="src/ghostDancer.js"></script>
+  <script src="src/halloweenDancer.js"></script>
+  <script src="src/christmasDancer.js"></script>
+  <script>
+  $(document).ready(function() {
+    var curDate = new Date();
+    var curMonth = curDate.getMonth();
+    if (curMonth != 11) {
+
+      $("#halloweenbtn").hide();
+    }
+    if (curMonth != 9) {
+      $("#christmasbtn").hide();
+    }
+
+  });
+  </script>
 </head>
 
 <body>
-    <!-- check out deployed version at http://development.subclass-dance-party.divshot.io/ -->
-    <embed src="sync.mp3" autostart="true" loop="true" width="2" height="0">
-    </embed>
-    <div class="topbar">
-        <span class="title">object dance party</span>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeHalloweenDancer">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            halloween dancer
-        </a>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeGhostDancer">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            ghost dancer
-        </a>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeParrotDancer">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            parrot dancer
-        </a>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeBlinkyDancer">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            blinky dancer
-        </a>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeTurtleDancer">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            turtle dancer
-        </a>
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeSquidDancer">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            squid dancer
-        </a>
-        <a href="#" class="lineUpButton btn">line up the dancers</a>
-    </div>
-    <audio controls="">
-        <source src="harlemshake.mp3" type="audio/mpeg">
-    </audio>
-    <script src="src/init.js"></script>
+  <!-- check out deployed version at http://danceparty.surge.sh/ -->
+  <embed src="sync.mp3" autostart="true" loop="true" width="2" height="0">
+  </embed>
+  <div class="topbar">
+    <span class="title">object dance party</span>
+    <a href="#" id="halloweenbtn" class="addDancerButton btn" data-dancer-maker-function-name="MakeHalloweenDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> add a halloween dancer
+    </a>
+    <a href="#" id="christmasbtn" class="addDancerButton btn" data-dancer-maker-function-name="MakeChristmasDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> add christmas dancers
+    </a>
+    <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeGhostDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> ghost dancer
+    </a>
+    <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeParrotDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> parrot dancer
+    </a>
+    <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeBlinkyDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> blinky dancer
+    </a>
+    <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeTurtleDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> turtle dancer
+    </a>
+    <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeSquidDancer">
+      <i class="fa fa-plus" aria-hidden="true"></i> squid dancer
+    </a>
+    <a href="#" class="lineUpButton btn">line up the dancers</a>
+  </div>
+  <audio controls="">
+    <source src="harlemshake.mp3" type="audio/mpeg">
+  </audio>
+  <script src="src/init.js"></script>
 </body>
 
 </html>
