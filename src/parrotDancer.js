@@ -1,7 +1,7 @@
 var MakeParrotDancer = function(top, left, timeBetweenSteps){
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('parrotDancer');
-  this.$node.css('background-image', "url(https://media2.giphy.com/media/nRBJjjILMTkQM/200.gif)");
+  this.$node.css('background-image', "url(http://www.gifs.net/Animation11/Animals/Birds/Parrot_talks.gif)");
 };
 
 MakeParrotDancer.prototype = Object.create(MakeDancer.prototype);
