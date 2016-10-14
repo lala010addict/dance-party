@@ -80,6 +80,13 @@ embed {
 }
 
 audio {
-    position: fixed;
-    bottom: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.christmasDancer {
+  background-image: no-repeat;
+  position: absolute;
+  width: 146px;
+  height: 102px;
 }
