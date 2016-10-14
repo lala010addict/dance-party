@@ -1,7 +1,7 @@
 var MakeParrotDancer = function(top, left, timeBetweenSteps){
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('parrotDancer');
-  this.$node.css('background-image', "url(http://i.imgur.com/pbUKAIy.png)");
+  this.$node.css('background-image', "url(http://i.imgur.com/tXvfPv3.gif)");
 
   var $el = $(this.$node);
   setInterval(function() {
