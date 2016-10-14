@@ -23,10 +23,11 @@ a:active {
 .addDancerButton {
     padding: 5px 12px;
     float: right;
+    color: black;
 }
 
 .topbar {
-    height: 32px;
+    height: 45px;
     background-color: #555;
 }
 
