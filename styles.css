@@ -1,97 +1,85 @@
-body,
-html {
+body, html {
     height: 100%;
+    margin: 0;
 }
 
 body {
-    margin: 0px;
     background-image: url("http://il9.picdn.net/shutterstock/videos/1379770/thumb/1.jpg");
-    /*  background-repeat:no-repeat;*/
     background-size: contain;
     background-position: center;
     font-size: 18px;
+    font-family: Arial;
 }
 
-body,
-a:link,
-a:visited,
-a:active {
-    color: lightblue;
-}
-
-.btn {
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
-  border-radius: 5px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 16px;
-  background: #9d12fa;
-  padding: 10px 10px 10px 10px;
-  margin: 5px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #3cb0fd;
-  text-decoration: none;
-}
-
-.title,
-.addDancerButton {
-    padding: 5px 12px;
-    float: right;
+/* doing this so the topbar is stuck to top of page */
+embed {
+    position: absolute;
 }
 
 .topbar {
     height: 40px;
     background-color: #555;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
 }
 
 .title {
-    background-color: #777;
+    font-family: sans-serif;
+    color: lightblue;
+}
+
+.btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #9d12fa;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+}
+
+.blinkyDancer, .squidDancer, .turtleDancer, .parrotDancer, .ghostDancer, .halloweenDancer {
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 .blinkyDancer {
-    /*border:10px solid red;
-  border-radius:10px;*/
-    background-image: no-repeat;
-    position: absolute;
     width: 250px;
     height: 340px;
 }
 
 .squidDancer {
-    background-image: no-repeat;
-    position: absolute;
     width: 200px;
     height: 200px;
 }
 
 .turtleDancer {
-    background-image: no-repeat;
-    position: absolute;
     width: 250px;
     height: 190px;
 }
 
 .parrotDancer {
-    background-image: no-repeat;
-    position: absolute;
-    width: 35px;
-    height: 25px;
+    width: 200px;
+    height: 210px;
 }
 
 .ghostDancer {
-    background-image: no-repeat;
-    position: absolute;
     width: 248px;
     height: 166px;
 }
 
 .halloweenDancer {
-    background-image: no-repeat;
-    position: absolute;
     width: 100px;
     height: 100px;
+}
+
+audio {
+    position: fixed;
+    bottom: 0;
 }
